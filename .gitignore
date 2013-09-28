@@ -14,3 +14,11 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+/config/settings.yml
+/git/*
+/.sass-cache
+/config/database.yml
+public/uploads
+bundler_stubs
+bin/
+.DS_Store
