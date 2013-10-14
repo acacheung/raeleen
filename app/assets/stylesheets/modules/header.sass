@@ -1,40 +1,36 @@
+@import load
+
 header
-  position: fixed
-
-.logo
   margin:
-    top: 2em
-    bottom: 2em
-    left: 2em
-  display: block
-  width: 300px
-  height: 58px
-  background:
-    image: url(/assets/logo.png)
-    size: 100%
-  text-indent: -9999px
+    top: 1.5em
+    bottom: 1em
+  overflow: auto
 
-.nav__item
-  margin:
-    bottom: .5em
-    left: 2em
+.logo, .nav__item
   display: block
-  width: 100px
-  height: 36px
+  float: left
   background-size: 100%
   text-indent: -9999px
 
+.logo
+  width: 300px
+  height: 58px
+  background-image: url(/assets/logo.png)
+
+.nav
+  margin-top: 20px
+  float: right
+
+.nav__item
+  margin-left: 1.25em
+  height: 36px
+  width: 100px
+
 .nav__item--drawings
-  background-image: url(/assets/drawings.png)
+  background-image: url(/assets/drawings.jpg)
 
 .nav__item--prints
-  background-image: url(/assets/prints.png)
+  background-image: url(/assets/prints.jpg)
 
 .nav__item--about
-  background-image: url(/assets/about.png)
-
-.nav__item--press
-  background-image: url(/assets/press.png)
-
-.nav__item--contact
-  background-image: url(/assets/contact.png)
+  background-image: url(/assets/about.jpg)

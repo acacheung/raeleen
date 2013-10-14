@@ -46,6 +46,7 @@ end
 
 gem 'haml'
 gem 'compass-rails', '~> 2.0.alpha.0'
+gem 'pages', github: 'dockyard/pages'
 
 group :development do
   gem 'better_errors'

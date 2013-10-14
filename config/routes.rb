@@ -3,7 +3,7 @@ Raeleen::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'works#index'
+   root 'pages#home'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -39,7 +39,7 @@ Raeleen::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
@@ -53,4 +53,8 @@ Raeleen::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+end
+
+Rails.application.routes.draw do
+  page :about
 end

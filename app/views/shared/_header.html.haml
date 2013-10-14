@@ -1,8 +1,8 @@
-= link_to 'Frozen Charlotte Press', root_path, class: 'logo'
+.wrap
 
-%nav
-  = link_to 'drawings', '#', class: 'nav__item nav__item--drawings'
-  = link_to 'prints', '#', class: 'nav__item nav__item--prints'
-  = link_to 'about', '#', class: 'nav__item nav__item--about'
-  = link_to 'press', '#', class: 'nav__item nav__item--press'
-  = link_to 'contact', '#', class: 'nav__item nav__item--contact'
+  = link_to 'Frozen Charlotte Press', root_path, class: 'logo'
+
+  %nav.nav
+    = link_to 'drawings', '#', class: 'nav__item nav__item--drawings'
+    = link_to 'prints', '#', class: 'nav__item nav__item--prints'
+    = link_to 'about', '/about', class: 'nav__item nav__item--about'
