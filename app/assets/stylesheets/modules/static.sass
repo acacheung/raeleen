@@ -1,15 +1,31 @@
 @import load
 
-//.static-header
-  //margin-bottom: 1em
-  //text-align: center
+.static-header
+  margin-bottom: .5em
+  //@media (max-width: 800px)
+  text-align: center
+  margin:
+    right: auto
+    left: auto
+  max-width: 600px
 
 .static-copy
   margin-bottom: 2em
+  margin:
+    right: auto
+    left: auto
+  max-width: 600px
+
+.static-links
+  display: block
+  text-align: center
 
 .raeleen-pic
-  margin: 2em auto
+  margin:
+    right: auto
+    bottom: 2em
+    left: auto
   display: block
-  height: 300px
-  width: 300px
-  +border-radius(150px)
+  width: 100%
+  max-width: 300px
+  +border-radius(50%)

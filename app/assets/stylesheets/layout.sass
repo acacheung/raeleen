@@ -1,14 +1,21 @@
 @import load
 
-@mixin wrap($max-width)
-  margin:
-    right: auto
-    left: auto
-  width: 90%
-  max-width: $max-width
+.push
+  margin-bottom: 2em
 
 .wrap
   @include wrap(980px)
 
 .wrap--narrow
   @include wrap(600px)
+
+.col--left
+  @media (min-width: 800px)
+    //width: 30%
+    //float: right
+
+.colspan--right
+  @media (min-width: 800px)
+    //margin-right: 8%
+    //width: 62%
+    //float: left

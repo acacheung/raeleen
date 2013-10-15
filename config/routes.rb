@@ -1,4 +1,12 @@
 Raeleen::Application.routes.draw do
+
+  Rails.application.routes.draw do
+    page :about
+  end
+
+  resources :drawings, only: [:index, :show]
+  resources :prints, only: [:index, :show]
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -53,8 +61,4 @@ Raeleen::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
-
-Rails.application.routes.draw do
-  page :about
 end
