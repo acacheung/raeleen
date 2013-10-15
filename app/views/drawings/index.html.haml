@@ -1,2 +1,4 @@
-- @drawings.each do |drawing|
-  = image_tag("/assets/#{drawing.image}", class: 'work')
+.wrap--narrow
+  - @drawings.each do |drawing|
+    = link_to drawing, class: 'image--thumb' do
+      = image_tag("drawings/thumbs/#{drawing.thumbnail}", class: 'image')

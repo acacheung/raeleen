@@ -1,6 +1,8 @@
 Raeleen::Application.routes.draw do
 
+  get "drawings/index"
   Rails.application.routes.draw do
+  get "drawings/index"
     page :about
   end
 
