@@ -1,2 +1,7 @@
 .wrap--narrow
   = image_tag("prints/fulls/#{@print.image}", class: 'image')
+  .image__info
+    %p= @print.title
+    %p= @print.edition_size
+    %p= @print.year
+    %p= @print.price

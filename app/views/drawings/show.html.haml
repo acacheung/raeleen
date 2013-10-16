@@ -1,3 +1,6 @@
 .wrap--narrow
   = image_tag("drawings/fulls/#{@drawing.image}", class: 'image')
-  %p= @drawing.title
+  .image__info
+    %p= @drawing.title
+    %p= @drawing.year
+    %p= @drawing.price
