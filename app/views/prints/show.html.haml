@@ -1,3 +1,6 @@
+- content_for :title do
+  Frozen Charlotte Press | #{@print.title}
+
 .wrap--narrow
   = image_tag("prints/fulls/#{@print.image}", class: 'image')
   .image__info
