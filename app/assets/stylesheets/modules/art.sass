@@ -1,12 +1,20 @@
 @import load
 
 .image--thumb
-  margin-bottom: 15px
-  height: 190px
-  width: 190px
   float: left
-  &:not(:nth-child(3n+3))
-    margin-right: 15px
+  @media (max-width: 360px)
+    margin-bottom: 15px
+    width: 100%
+  @media (min-width: 360px) and (max-width: 735px)
+    margin-bottom: 4%
+    width: 48%
+    &:nth-child(odd)
+      margin-right: 4%
+  @media (min-width: 735px)
+    margin-bottom: 2%
+    width: 32%
+    &:not(:nth-child(3n+3))
+      margin-right: 2%
 
 .image--full
   width: 100%
