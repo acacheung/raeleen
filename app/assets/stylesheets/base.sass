@@ -7,12 +7,23 @@
   src: url('/assets/gentium.eot?iefix') format("eot"), url('/assets/gentium.woff') format("woff"), url('/assets/gentium.ttf') format("truetype"), url('/assets/gentium.svg#webfont') format("svg")
 
 body
-  font-family: 'gentium', serif
   line-height: 1.8
   color: $black
 
 h2
-  font-size: 1.35em
+  font:
+    size: 1.35em
+    family: 'gentium', serif
+
+p, a
+  font:
+    family: 'lato', sans-serif
+    weight: 300
 
 a
   text-decoration: none
+  color: $black
+  +transition-duration(.25s)
+  +transition-property(color)
+  &:hover, &:active
+    color: $red
