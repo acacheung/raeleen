@@ -4,7 +4,7 @@
     = image_tag('logo.png', class: 'logo')
 
   %nav.nav
-    = link_to 'News', '/', class: 'nav__item'
-    = link_to 'Drawings', '/drawings', class: 'nav__item'
-    = link_to 'Prints', '/prints', class: 'nav__item'
-    = link_to 'About', '/about', class: 'nav__item'
+    = link_to 'News', '/', class: "nav__item #{active_state_for(nil)}"
+    = link_to 'Drawings', '/drawings', class: "nav__item #{active_state_for('drawings')}"
+    = link_to 'Prints', '/prints', class: "nav__item #{active_state_for('prints')}"
+    = link_to 'About', '/about', class: "nav__item #{active_state_for('about')}"
