@@ -4,7 +4,14 @@
 .wrap--narrow
   = image_tag("prints/fulls/#{@print.image}", class: 'image')
   .image__info
-    %p= @print.title
-    %p= @print.edition_size
-    %p= @print.year
-    %p= @print.price
+    %p.image__info__title= "#{@print.title}"
+    - if @print.medium
+      %p.image__info__desc= @print.medium.capitalize
+    - if @print.image_height && @print.image_width && @print.paper_height && @print.paper_width
+      %p.image__info__desc= "#{@print.image_height} x #{@print.image_width} inches on #{@print.paper_height} x #{@print.paper_width} inches"
+    - if @print.year
+      %p.image__info__desc= @print.year
+
+    .image__nav
+      = link_to '<', @print.prev, class: 'image__nav--left'
+      = link_to '>', @print.next, class: 'image__nav--right'

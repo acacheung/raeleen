@@ -4,6 +4,14 @@
 .wrap--narrow
   = image_tag("drawings/fulls/#{@drawing.image}", class: 'image')
   .image__info
-    %p= @drawing.title
-    %p= @drawing.year
-    %p= @drawing.price
+    %p.image__info__title= "#{@drawing.title}"
+    - if @drawing.medium
+      %p.image__info__desc= @drawing.medium.capitalize
+    - if @drawing.height && @drawing.width
+      %p.image__info__desc= "#{@drawing.height} x #{@drawing.width} inches"
+    - if @drawing.year
+      %p.image__info__desc= @drawing.year
+
+    .image__nav
+      = link_to '<', @drawing.prev, class: 'image__nav--left'
+      = link_to '>', @drawing.next, class: 'image__nav--right'
