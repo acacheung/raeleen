@@ -2,7 +2,6 @@
 
 .static-header
   margin-bottom: .5em
-  //@media (max-width: 800px)
   text-align: center
   margin:
     right: auto
@@ -10,11 +9,12 @@
   max-width: 600px
 
 .static-copy
-  margin-bottom: 2em
   margin:
     right: auto
     left: auto
   max-width: 600px
+  &:not(:last-child)
+    margin-bottom: 2em
 
 .static-links
   display: block
