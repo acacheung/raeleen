@@ -5,3 +5,4 @@
   - @drawings.each do |drawing|
     = link_to drawing, class: 'image--thumb' do
       = image_tag("drawings/thumbs/#{drawing.thumbnail}", class: 'image')
+      %p.image__title= drawing.title

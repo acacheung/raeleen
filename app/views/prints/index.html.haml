@@ -5,3 +5,4 @@
   - @prints.each do |print|
     = link_to print, class: 'image--thumb' do
       = image_tag("prints/thumbs/#{print.thumbnail}", class: 'image')
+      %p.image__title= print.title
